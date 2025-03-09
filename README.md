@@ -1,35 +1,45 @@
 # 🎓 AlumniLink - Connecting Alumni & Students
 
-AlumniLink is a **MERN stack** web platform designed to connect college alumni with students, providing **mentorship, placement support, and project collaboration**.
+AlumniLink is a **MERN stack** web platform designed to connect college alumni with students, providing **company reviews and placement resources**.
 
 ---
 
-## 🌟 Features
-
-✅ **Mentorship System**  
-   - Students can ask private questions.  
-   - Alumni can view and reply to student queries asynchronously.  
+## 🌟 Features (Completed)
 
 ✅ **Company Life Reviews**  
-   - Alumni can anonymously share their work experience.  
-   - Students can search for company reviews.  
+   - Alumni can anonymously share their **work experience**.  
+   - Students can **search and view reviews** based on company names.  
+   - Helps students understand the **work culture** before applying.  
 
-✅ **Job & Internship Opportunities**  
-   - Alumni can post job openings & internships.  
-   - Students can apply directly.  
+✅ **Placement & Learning Resources**  
+   - Alumni can share **study materials, guides, and placement resources**.  
+   - Students can access resources to **prepare for jobs and internships**.  
 
-✅ **Project Collaboration**  
-   - Students can post project ideas.  
-   - Alumni can mentor and help implement them.  
+---
 
-✅ **Q&A Forum (Like Quora)**  
-   - Students post questions.  
-   - Alumni provide detailed answers.
+## 🚧 Features (In Progress)  
 
-✅ **Referral Requests**  
-   - Students can request **referrals** from alumni for jobs & internships.  
-   - Alumni can review and approve referral requests.  
-   - Encourages direct networking between students and working professionals.  
+⏳ **Mentorship System** (Students ask private questions, Alumni reply)  
+⏳ **Job & Internship Opportunities** (Alumni post jobs, Students apply)  
+⏳ **Project Collaboration** (Students post ideas, Alumni mentor them)  
+⏳ **Referral Requests** (Students request referrals, Alumni approve)  
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend**: React.js  
+- **Backend**: Node.js, Express.js  
+- **Database**: MongoDB  
+
+---
+
+## 🎯 How to Run the Project
+
+### 1️⃣ Clone the Repository
+```sh
+git clone https://github.com/your-username/AlumniLink.git
+cd AlumniLink
 
 ---
 
