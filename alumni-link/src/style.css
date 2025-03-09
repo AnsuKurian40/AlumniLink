@@ -1,0 +1,290 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: fixed; /* Keeps it visible while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color:#6616e7 ;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 200px;
+    margin-right: 40px;
+    
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Centering the Login & Register Box */
+.auth-container {
+    background: white;
+    padding: 30px;
+    max-width: 550px;
+    margin: 120px auto; /* Fix overlapping navbar */
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+/* Header Styling */
+.form-header {
+    background: #5d54c3; /* Matching theme color */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 12px 12px 0 0;
+    margin: -30px -30px 20px -30px;
+}
+
+/* Input Fields & Buttons */
+input, select, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+/* Button Styling */
+button {
+    background: #5d54c3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: 0.3s;
+    width:75px;
+}
+
+button:hover {
+    background: rgb(167, 20, 167);
+}
+
+/* Remove the close button */
+.close-button {
+    display: none;
+}
+
+/* Radio Button Styling */
+.radio-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.radio-group label {
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+/* Register & Login Links */
+.register-link, .login-link {
+    font-size: 14px;
+    color: #5d54c3;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.register-link:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+/* Footer Text */
+.form-footer {
+    font-size: 14px;
+    color: #333;
+    margin-top: 15px;
+}
+
+.form-footer a {
+    color: #5d54c3;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Adjust login/register form position */
+.login-container,
+.register-container {
+    margin-top: 120px; /* Prevents overlap with navbar */
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.register-link {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #5d54c3;
+}
+
+.register-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #5d54c3;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.forgot-password{
+    cursor:pointer;
+}
+
+
+
+.user-type-selection {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.user-type-selection label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.user-type-selection input {
+    accent-color: #0095f6; /* Instagram blue */
+}
+
+
+
+
+/* Flex container for image and auth form */
+.auth-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    max-width: 1200px;
+    margin: 100px auto 0; /* Adjusted margin */
+}
+
+/* Image container */
+.auth-image {
+    width: 50%;
+}
+
+.auth-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Auth Container (Login/Register) */
+.auth-container {
+    width: 40%;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    backdrop-filter: none;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2); /* Slight shadow for better readability */
+}
+
+
+
+
+.auth-container, .register-container, .login-container {
+    border: 3px solid#925FE2; /* Purple border */
+    border-radius: 10px; /* Optional: Rounded corners */
+    padding: 20px;
+    /* box-shadow: 2px 2px 10px rgba(128, 0, 128, 0.2); Optional: Light purple shadow */
+    background:rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(3px);
+   
+}
+
+
+
+.auth-container input,
+.auth-container select {
+    width: 100%; /* Full width of the container */
+    padding: 10px;
+    margin: 5px 0; /* Space between fields */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    box-sizing: border-box; /* Prevents extra width issues */
+}
+
+
+
+.auth-container h2 {
+    color: #4a148c; /* Dark purple */
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: none; /* Remove unnecessary shadow */
+}
+
+
+
+
+.form-header {
+    color: #333; /* Darker text for better visibility */
+}

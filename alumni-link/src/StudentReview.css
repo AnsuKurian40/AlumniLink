@@ -1,0 +1,76 @@
+/* 🌟 Container Styling */
+.student-review-container {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #fdfcff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(104, 37, 211, 0.2);
+    border: 2px solid #6825d3; /* Purple border */
+}
+
+/* 🌟 Heading */
+.student-review-container h2 {
+    color: #6825d3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 🌟 Search Bar */
+.student-review-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6825d3;
+    border-radius: 5px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.student-review-container input:focus {
+    border-color: #4e1aa8;
+    box-shadow: 0 0 5px rgba(104, 37, 211, 0.5);
+}
+
+/* 🌟 Review Cards */
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.review-card {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(104, 37, 211, 0.2);
+    border: 2px solid #6825d3;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(104, 37, 211, 0.3);
+}
+
+/* 🌟 Review Titles */
+.review-card h3 {
+    color: #6825d3;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+/* 🌟 Review Text */
+.review-card p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+}
+
+/* 🌟 Strong Labels */
+.review-card p strong {
+    color: #4e1aa8;
+}

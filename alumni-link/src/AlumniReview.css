@@ -1,0 +1,75 @@
+/* 🌟 Container Styling */
+.alumni-review-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #fdfcff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(104, 37, 211, 0.2);
+    border: 2px solid #6825d3; /* Purple border */
+}
+
+/* 🌟 Heading */
+.alumni-review-container h2 {
+    color: #6825d3;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* 🌟 Form Labels */
+.alumni-review-container label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    color: #4e1aa8;
+    margin-top: 10px;
+    text-align: left;
+}
+
+/* 🌟 Form Inputs & Textarea */
+.alumni-review-container input,
+.alumni-review-container textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #6825d3;
+    border-radius: 5px;
+    outline: none;
+    margin-top: 5px;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+}
+
+.alumni-review-container textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+/* 🌟 Input & Textarea Focus Effect */
+.alumni-review-container input:focus,
+.alumni-review-container textarea:focus {
+    border-color: #4e1aa8;
+    box-shadow: 0 0 5px rgba(104, 37, 211, 0.5);
+}
+
+/* 🌟 Submit Button */
+.alumni-review-container button {
+    background: #925FE2;
+    color: white;
+    border: 2px solid#925FE2 ;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    width: 500px;
+}
+
+.alumni-review-container button:hover {
+    background: purple;
+    border-color: #4e1aa8;
+}

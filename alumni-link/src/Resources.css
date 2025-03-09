@@ -1,0 +1,75 @@
+.resources-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.upload-section {
+    margin-bottom: 20px;
+}
+
+.resource-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.resource-list li {
+    background: #f4f4f4;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Ensures text and button align properly */
+    align-items: center; /* Centers vertically */
+    padding: 15px;
+    border: 2px solid #6825d3; 
+}
+
+.download-button {
+    background-color: #6825d3;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 300px; /* Ensures all buttons are same width */
+    text-align: center;
+    
+}
+
+.download-button:hover {
+    background-color: #4e1aa8;
+}
+
+
+button {
+    background: #9400d3;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 125px;
+}
+.search-bar{
+    border:2px  solid#6825d3;
+}
+
+.upload-section input
+ {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #6825d3; /* Purple border */
+    border-radius: 5px;
+    outline: none;
+}
+
+.upload-section input:focus,
+.search-bar input:focus {
+    border-color: #4e1aa8; /* Darker purple on focus */
+    box-shadow: 0 0 5px rgba(104, 37, 211, 0.5);
+}

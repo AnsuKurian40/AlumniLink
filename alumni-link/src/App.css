@@ -1,0 +1,56 @@
+/* Background for login and register pages */
+.auth-background {
+  background: white; /* Use the existing background */
+  background-size: cover;
+  height: 100vh;
+}
+
+/* White background for dashboard */
+.dashboard-background {
+  background-color: white;
+  /* width:450px; */
+  /* border-radius:25px; */
+  /* margin-right: 0px;
+  margin-left: 1000px; */
+}
+
+
+
+
+.alumni-review-container, .student-review-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background: #9400d3;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.review-list {
+  margin-top: 20px;
+}
+
+.review-card {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
