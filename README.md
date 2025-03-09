@@ -24,7 +24,12 @@ AlumniLink is a **MERN stack** web platform designed to connect college alumni w
 
 ✅ **Q&A Forum (Like Quora)**  
    - Students post questions.  
-   - Alumni provide detailed answers.  
+   - Alumni provide detailed answers.
+
+✅ **Referral Requests**  
+   - Students can request **referrals** from alumni for jobs & internships.  
+   - Alumni can review and approve referral requests.  
+   - Encourages direct networking between students and working professionals.  
 
 ---
 
