@@ -1,0 +1,165 @@
+/* StudentReview.css */
+
+/* Base Styles */
+.student-review-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #1a1a1a;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    position: relative;
+  }
+  
+  h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #4f46e5, #10b981);
+    margin: 0.75rem auto 0;
+    border-radius: 2px;
+  }
+  
+  /* Search Bar */
+  input[type="text"] {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    display: block;
+    padding: 0.8rem 1.2rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  input[type="text"]:focus {
+    outline: none;
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+  }
+  
+  input[type="text"]::placeholder {
+    color: #94a3b8;
+  }
+  
+  /* Review List */
+  .review-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  /* Review Card with Blue Left Border */
+  .review-card {
+    background: white;
+    border-radius: 0 8px 8px 0;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 
+                0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    border-left: 5px solid #3b82f6;
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    overflow: hidden;
+  }
+  
+  .review-card::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 5px;
+    background: #3b82f6;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .review-card h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e40af;
+    margin-bottom: 0.5rem;
+  }
+  
+  .review-card p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0.5rem 0;
+  }
+  
+  .review-card strong {
+    color: #374151;
+    font-weight: 500;
+  }
+  
+  /* Empty State */
+  .review-list:empty::after {
+    content: "No reviews found. Try a different search term.";
+    display: block;
+    width: 100%;
+    text-align: center;
+    color: #64748b;
+    padding: 2rem;
+    grid-column: 1 / -1;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .review-card {
+    animation: fadeIn 0.4s ease-out forwards;
+    animation-delay: calc(var(--index) * 0.1s);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .student-review-container {
+      padding: 1.5rem;
+    }
+    
+    .review-list {
+      grid-template-columns: 1fr;
+    }
+    
+    h2 {
+      font-size: 1.75rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .student-review-container {
+      padding: 1rem;
+    }
+    
+    h2 {
+      font-size: 1.5rem;
+    }
+    
+    input[type="text"] {
+      padding: 0.7rem 1rem;
+    }
+  }

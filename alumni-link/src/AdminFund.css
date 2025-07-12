@@ -1,0 +1,113 @@
+/*      Main Container */ 
+.admin-fund-container { 
+    max-width: 900px; 
+    margin: auto; 
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    padding: 20px; 
+} 
+ 
+/*     Search Box */ 
+.search-box { 
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px; 
+    border: 2px solid purple; 
+    border-radius: 5px; 
+    font-size: 16px; 
+} 
+ 
+/*   Fund Request & Contribution Card */ 
+.fund-card { 
+    border: 2px solid purple; 
+    padding: 15px; 
+    border-radius: 10px; 
+    margin-bottom: 15px; 
+    background-color: #f9f9ff; 
+    text-align: left; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); 
+    transition: 0.3s; 
+} 
+ 
+/* Hover Effect */ 
+.fund-card:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2); 
+} 
+ 
+/*       Fund Request Title */ 
+.fund-title { 
+    font-size: 20px; 
+    font-weight: bold; 
+    color: purple; 
+    margin-bottom: 5px; 
+} 
+ 
+/* 🏷 Status Styles */ 
+.status-approved { 
+    color: green; 
+    font-weight: bold; 
+} 
+ 
+.status-rejected { 
+    color: red; 
+    font-weight: bold; 
+} 
+ 
+.status-pending { 
+    color: orange; 
+    font-weight: bold; 
+} 
+ 
+/*    Approve &   Reject Buttons */ 
+.button-group { 
+    display: flex; 
+    gap: 10px; 
+    margin-top: 10px; 
+} 
+ 
+.approve-btn { 
+    background-color: green; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    transition: 0.3s; 
+} 
+ 
+.reject-btn { 
+    background-color: red; 
+    color: white; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-size: 14px; 
+    transition: 0.3s; 
+} 
+ 
+/* Button Hover Effects */ 
+.approve-btn:hover { 
+    background-color: darkgreen; 
+} 
+ 
+.reject-btn:hover { 
+    background-color: darkred; 
+} 
+ 
+/*      View Screenshot Link */ 
+.fund-card a { 
+    display: inline-block; 
+    margin-top: 10px; 
+    text-decoration: none; 
+    font-weight: bold; 
+    color: blue; 
+} 
+ 
+.fund-card a:hover { 
+    text-decoration: underline; 
+} 
+ 
+ 

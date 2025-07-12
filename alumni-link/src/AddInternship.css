@@ -1,0 +1,198 @@
+/* AddInternship.css */
+
+/* Base Container */
+.add-internship-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Heading */
+.add-internship-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2563eb; /* Blue color scheme */
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.add-internship-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #2563eb, #3b82f6);
+  border-radius: 2px;
+}
+
+/* Form Styling */
+.add-internship-container form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Input Fields */
+.add-internship-container input,
+.add-internship-container textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8fafc; /* Light background for inputs */
+}
+
+.add-internship-container input:focus,
+.add-internship-container textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+  background-color: #ffffff;
+}
+
+.add-internship-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Submit Button */
+.add-internship-container button {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(37, 99, 235, 0.1);
+  margin-top: 1rem;
+}
+
+.add-internship-container button:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.15);
+}
+
+.add-internship-container button:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(37, 99, 235, 0.1);
+}
+
+.add-internship-container button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  background: #94a3b8;
+}
+
+/* Error Message */
+.error-message {
+  color: #dc2626;
+  background: #fee2e2;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  animation: shake 0.5s ease;
+}
+
+/* Success Message (for when you implement it) */
+.success-message {
+  color: #16a34a;
+  background: #dcfce7;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-internship-container {
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 12px;
+  }
+  
+  .add-internship-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .add-internship-container form {
+    gap: 1.2rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .add-internship-container {
+    background: #1e1e2d;
+    color: #f0f0f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-internship-container h2 {
+    color: #60a5fa;
+  }
+  
+  .add-internship-container h2::after {
+    background: linear-gradient(90deg, #60a5fa, #93c5fd);
+  }
+  
+  .add-internship-container input,
+  .add-internship-container textarea {
+    background: #2d2d3d;
+    border-color: #3d3d4d;
+    color: #f0f0f0;
+  }
+  
+  .add-internship-container input:focus,
+  .add-internship-container textarea:focus {
+    border-color: #60a5fa;
+    box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.1);
+    background: #1e1e2d;
+  }
+  
+  .add-internship-container button {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+  }
+  
+  .error-message {
+    color: #fca5a5;
+    background: #450a0a;
+  }
+  
+  .success-message {
+    color: #86efac;
+    background: #052e16;
+  }
+}

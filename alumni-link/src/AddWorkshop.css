@@ -1,0 +1,177 @@
+/* AddWorkshop.css */
+
+/* Base Container */
+.add-workshop-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Heading */
+.add-workshop-container h2 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #5d00b3;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.add-workshop-container h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #5d00b3, #8000ff);
+  border-radius: 2px;
+}
+
+/* Form Styling */
+.add-workshop-container form {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/* Input Fields */
+.add-workshop-container input,
+.add-workshop-container textarea {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.add-workshop-container input:focus,
+.add-workshop-container textarea:focus {
+  outline: none;
+  border-color: #5d00b3;
+  box-shadow: 0 0 0 3px rgba(93, 0, 179, 0.1);
+}
+
+.add-workshop-container textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Date Input Customization */
+.add-workshop-container input[type="date"] {
+  appearance: none;
+  padding: 1rem 1.2rem;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%235d00b3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E") no-repeat 95% 50%;
+  background-size: 20px;
+}
+
+/* Submit Button */
+.add-workshop-container button {
+  background: linear-gradient(135deg, #5d00b3, #8000ff);
+  color: white;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(93, 0, 179, 0.1);
+}
+
+.add-workshop-container button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(93, 0, 179, 0.15);
+}
+
+.add-workshop-container button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(93, 0, 179, 0.1);
+}
+
+/* Error Message */
+.error-message {
+  color: #ff4444;
+  background: #ffeeee;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  animation: shake 0.5s ease;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .add-workshop-container {
+    padding: 1.5rem;
+    margin: 1rem;
+    border-radius: 12px;
+  }
+  
+  .add-workshop-container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .add-workshop-container form {
+    gap: 1.2rem;
+  }
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+  .add-workshop-container {
+    background: #1e1e2d;
+    color: #f0f0f0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-workshop-container h2 {
+    color: #a78bfa;
+  }
+  
+  .add-workshop-container input,
+  .add-workshop-container textarea {
+    background: #2d2d3d;
+    border-color: #3d3d4d;
+    color: #f0f0f0;
+  }
+  
+  .add-workshop-container input:focus,
+  .add-workshop-container textarea:focus {
+    border-color: #a78bfa;
+    box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.1);
+  }
+  
+  .add-workshop-container button {
+    background: linear-gradient(135deg, #7c3aed, #a78bfa);
+  }
+  
+  .error-message {
+    color: #ff6b6b;
+    background: #3a2525;
+  }
+}

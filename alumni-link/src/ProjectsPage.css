@@ -1,0 +1,119 @@
+.projects-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.projects-page h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.projects-by-alumni {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projects-by-alumni h3 {
+    color: #3498db;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.projects-by-alumni ul {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.projects-by-alumni li {
+    background-color: white;
+    border-radius: 6px;
+    padding: 1.2rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projects-by-alumni li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.projects-by-alumni h4 {
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+}
+
+.projects-by-alumni p {
+    color: #555;
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.projects-by-alumni p:last-child {
+    margin-bottom: 0;
+}
+
+/* No projects message */
+.projects-page > p {
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-page {
+        padding: 1rem;
+    }
+    
+    .projects-by-alumni ul {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Skills and other tags styling */
+.projects-by-alumni p:contains("Required Skills:"),
+.projects-by-alumni p:contains("Expected Contribution:"),
+.projects-by-alumni p:contains("Collaboration Mode:") {
+    font-weight: 500;
+}
+
+.projects-by-alumni p:contains("Required Skills:")::before,
+.projects-by-alumni p:contains("Expected Contribution:")::before,
+.projects-by-alumni p:contains("Collaboration Mode:")::before {
+    content: "• ";
+    color: #3498db;
+    font-weight: bold;
+}
+
+/* Animation for loading state (optional) */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.projects-by-alumni li {
+    animation: fadeIn 0.3s ease forwards;
+    opacity: 0;
+}
+
+.projects-by-alumni li:nth-child(1) { animation-delay: 0.1s; }
+.projects-by-alumni li:nth-child(2) { animation-delay: 0.2s; }
+.projects-by-alumni li:nth-child(3) { animation-delay: 0.3s; }
+.projects-by-alumni li:nth-child(4) { animation-delay: 0.4s; }
+.projects-by-alumni li:nth-child(5) { animation-delay: 0.5s; }

@@ -1,0 +1,82 @@
+ 
+.workshops-page { 
+    max-width: 1200px; 
+    margin: 40px auto; 
+    padding: 20px; 
+    font-family: 'Arial', sans-serif; 
+    background-color: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.workshops-page h2 { 
+    text-align: center; 
+    color: #333; 
+    margin-bottom: 20px; 
+    font-size: 26px; 
+} 
+ 
+.workshops-by-alumni { 
+    background: white; 
+    padding: 20px; 
+    margin-bottom: 20px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s ease-in-out; 
+} 
+ 
+.workshops-by-alumni:hover { 
+    transform: scale(1.02); 
+} 
+ 
+.workshops-page h3 { 
+    color: #007bff; 
+    font-size: 22px; 
+    margin-bottom: 10px; 
+    display: flex; 
+    align-items: center; 
+} 
+ 
+.workshops-page ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 15px; 
+} 
+ 
+.workshops-page li { 
+    background: #fff; 
+    padding: 15px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+    transition: 0.3s; 
+} 
+ 
+.workshops-page li:hover { 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+} 
+ 
+.workshops-page h4 { 
+    color: #222; 
+    font-size: 18px; 
+    margin-bottom: 5px; 
+} 
+ 
+.workshops-page p { 
+    font-size: 14px; 
+    color: #555; 
+    margin: 5px 0; 
+} 
+ 
+@media (max-width: 768px) { 
+    .workshops-page { 
+        padding: 15px; 
+    } 
+ 
+    .workshops-page ul { 
+        grid-template-columns: 1fr; 
+    } 
+} 
+ 

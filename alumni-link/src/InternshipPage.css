@@ -1,0 +1,120 @@
+/* Only apply styles inside .internships-page */ 
+.internships-page { 
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 20px; 
+    font-family: "Arial", sans-serif; 
+    color: #333; 
+    background: #f9f9f9; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.internships-page h2 { 
+    text-align: center; 
+    color: #2c3e50; 
+    margin-bottom: 20px; 
+} 
+ 
+.internships-page h3 { 
+    color: #34495e; 
+    margin-bottom: 10px; 
+} 
+ 
+.internships-page .internships-by-alumni { 
+    background: white; 
+    padding: 15px; 
+    border-radius: 8px; 
+    margin-bottom: 20px; 
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); 
+} 
+ 
+.internships-page ul { 
+    list-style: none; 
+    padding: 0; 
+} 
+ 
+.internships-page li { 
+    background: #ecf0f1; 
+    padding: 12px; 
+    border-radius: 5px; 
+    margin-bottom: 10px; 
+    transition: transform 0.2s ease-in-out; 
+} 
+ 
+.internships-page li:hover { 
+    transform: translateY(-3px); 
+} 
+ 
+.internships-page button { 
+    background: #3498db; 
+    color: white; 
+    border: none; 
+    padding: 8px 14px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: 0.3s ease-in-out; 
+} 
+ 
+.internships-page button:hover { 
+    background: #2980b9; 
+} 
+ 
+/* ===== MODAL STYLING (Scoped) ===== */ 
+.internships-page .modal-overlay { 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0, 0, 0, 0.4); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    animation: fadeIn 0.3s ease-in-out; 
+} 
+ 
+.internships-page .modal { 
+    background: white; 
+    padding: 20px; 
+    width: 400px; 
+    border-radius: 10px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    animation: slideIn 0.3s ease-in-out; 
+} 
+ 
+.internships-page .modal-content { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 10px; 
+} 
+ 
+.internships-page .close-btn { 
+    align-self: flex-end; 
+    background: #e74c3c; 
+    padding: 5px 10px; 
+} 
+ 
+.internships-page .close-btn:hover { 
+    background: #c0392b; 
+} 
+ 
+/* Animations */ 
+@keyframes fadeIn { 
+    from { opacity: 0; } 
+    to { opacity: 1; } 
+} 
+ 
+@keyframes slideIn { 
+    from { transform: translateY(-20px); } 
+    to { transform: translateY(0); } 
+} 
+ 
+/* Responsive Design */ 
+@media (max-width: 600px) { 
+    .internships-page .modal { 
+        width: 90%; 
+    } 
+} 
+ 
+ 

@@ -1,0 +1,186 @@
+/* StudentFund.css - Modern Styling */
+
+/* Base Container */
+.student-fund-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Headings */
+  .student-fund-container h2 {
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+  }
+  
+  .student-fund-container h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #2ecc71);
+  }
+  
+  .student-fund-container h3 {
+    color: #34495e;
+    margin: 2rem 0 1rem;
+    font-weight: 500;
+  }
+  
+  /* Form Styling */
+  .fund-request-form {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .fund-request-form input,
+  .fund-request-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+  }
+  
+  .fund-request-form input:focus,
+  .fund-request-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+  }
+  
+  .fund-request-form textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  .fund-request-form button {
+    padding: 0.75rem 1.5rem;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width:150px;
+    height:70px;
+    
+  }
+  
+  .fund-request-form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(46, 204, 113, 0.3);
+  }
+  
+  /* Requests List */
+  .requests-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .request-item {
+    background: white;
+    padding: 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .request-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  /* Status Indicator */
+  .request-item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 6px;
+    background: var(--status-color);
+  }
+  
+  .request-item[data-status="pending"] {
+    --status-color: #f39c12;
+  }
+  
+  .request-item[data-status="approved"] {
+    --status-color: #2ecc71;
+  }
+  
+  .request-item[data-status="rejected"] {
+    --status-color: #e74c3c;
+  }
+  
+  .request-item[data-status="partially approved"] {
+    --status-color: #3498db;
+  }
+  
+  .request-details {
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: 500;
+  }
+  
+  .request-amount {
+    font-size: 1.1rem;
+    color: #27ae60;
+  }
+  
+  .request-status {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    background-color: var(--status-color);
+    color: white;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+  }
+  
+  .request-remaining {
+    margin-top: 0.5rem;
+    color: #7f8c8d;
+    font-size: 0.9rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .student-fund-container {
+      padding: 1rem;
+    }
+    
+    .fund-request-form {
+      padding: 1rem;
+    }
+    
+    .fund-request-form input,
+    .fund-request-form button {
+      width: 100%;
+    }
+  }

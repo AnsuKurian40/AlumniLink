@@ -1,0 +1,40 @@
+.about-container { 
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background-color: #eaf2f8; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    margin-top: 150px; 
+  } 
+   
+  .about-container h2 { 
+    color: #2471a3; 
+    text-align: center; 
+  } 
+   
+  .about-container h3 { 
+    color: #154360; 
+    margin-top: 20px; 
+  } 
+   
+  .about-container p { 
+    font-size: 16px; 
+    color: #333; 
+    line-height: 1.6; 
+  } 
+   
+  .about-container ul { 
+    list-style-type: none; 
+    padding: 0; 
+  } 
+   
+  .about-container ul li { 
+    background: #d6eaf8; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 5px; 
+    font-size: 16px; 
+  } 
+   
+ 

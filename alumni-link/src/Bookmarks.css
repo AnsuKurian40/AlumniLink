@@ -1,0 +1,128 @@
+
+/* ViewInternships.css and ViewWorkshops.css */
+
+/* Bookmark Button */
+.bookmark-button {
+  background: none; /* Remove background */
+  border: none; /* Remove border */
+  cursor: pointer; /* Show pointer cursor on hover */
+  font-size: 1.5rem; /* Adjust icon size */
+  color: #ffd700; /* Gold color for bookmarked icon */
+  padding: 0; /* Remove padding */
+  margin-left: 10px; /* Add some spacing */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover Effect */
+.bookmark-button:hover {
+  color: #ffa500; /* Change color on hover */
+  opacity: 0.8; /* Slightly fade the icon */
+}
+
+/* Bookmarked Icon (Filled) */
+.bookmark-button .fa-bookmark {
+  color: #ffd700; /* Gold color for bookmarked icon */
+}
+
+/* Unbookmarked Icon (Outline) */
+.bookmark-button .fa-reg-bookmark {
+  color: #ccc; /* Light gray color for unbookmarked icon */
+}
+
+.bookmarks-container {
+  padding: 20px;
+}
+
+.bookmarks-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bookmark-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  width: 300px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.bookmark-item h3 {
+  margin-bottom: 10px;
+}
+
+.bookmark-item button {
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.bookmark-item button:hover {
+  background: #0056b3;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+.close-modal {
+  margin-top: 15px;
+  padding: 8px 12px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.close-modal:hover {
+  background: darkred;
+}
+
+
+.view-details-link {
+  display: inline-block;
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.view-details-link:hover {
+  color: darkblue;
+}
+
+.internship-card p {
+  color: #12141282; /* Change company name color to green */
+  font-weight: bold;
+}
+
+/* Style for organizer name inside workshop cards */
+.workshop-card p {
+  color: #12141282; /* Optional: Keep organizer names blue for differentiation */
+  font-weight: bold;
+}
+
+
